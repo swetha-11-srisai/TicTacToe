@@ -8,7 +8,8 @@ namespace TicTacToe
         {
             Console.WriteLine("Hello World!");
             TicTacToeGame tic = new TicTacToeGame();
-            
+            tic.Check();
+            tic.ShowMethod();
         }
     }
 }
