@@ -8,9 +8,13 @@ namespace TicTacToe
     {
         char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         int player = 1;
-        int choice;
+        
         public void Check()
         {
+            while (player < arr.Length)
+            {
+                player++;
+            }
             Console.WriteLine("player1:X and Player2:O");
             if (player % 2 == 0)
             {
@@ -21,5 +25,6 @@ namespace TicTacToe
                 Console.WriteLine("Player 1 chance");
             }
         }
+
     }
 }
